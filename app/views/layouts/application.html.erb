@@ -9,13 +9,7 @@
   </head>
 
   <body>
-    <ul>
-      <li><%= link_to 'Home', home_path %></li>
-      <li><%= link_to 'About', about_path %></li>
-      <li><%= link_to '12 lizards', lizards_path(12) %></li>
-      <li><%= link_to '444 lizards', lizards_path(444) %></li>
-      <li><%= link_to '9672 lizards', lizards_path(9672) %></li>
-    </ul>
+    <%= render 'common/menu' %>
     <%= yield %>
   </body>
 </html>
