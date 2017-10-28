@@ -1,8 +1,1 @@
-<ul>
-  <% @tomes.each do |tome| %>
-    <li>
-      <p><%=tome.title%></p>
-      <p><%=tome.contents%></p>
-    </li>
-  <% end %>
-</ul>
+<%= render partial: 'tome', collection: @tomes %>
