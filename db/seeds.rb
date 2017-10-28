@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'faker'
+
+100.times do
+  tome = Tome.new
+  tome.title = Faker::Lovecraft.tome
+  tome.contents = Faker::Lovecraft.paragraph
+  tome.save
+end
