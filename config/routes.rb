@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'about_us', to: 'pages#about', as: 'about'
   get 'lizards/:number', to: 'pages#lizards', as: 'lizards'
   get 'tomes', to: 'tomes#index'
-  get 'tomes/:id', to: 'tomes#item'
+  get 'tomes/:id', to: 'tomes#item', id:/\d+/
   
 
   get 'pages/home'
